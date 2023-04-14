@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Encriptador/Desencriptador</h1>
-    <div class="centrar">
+    <div>
         <label> 
             <input type="radio" name="option" value="encryptar" checked> Encriptar
         </label>
@@ -20,7 +20,7 @@
         <textarea name="" id="textoEntrada" cols="37" rows="10" placeholder="Ingrese el texto"></textarea>
         <br>
         <button onclick="encriptaDesencriptar()"><span class="text">Realizar operación</span></button>
-        <button onclick="limpiarAreaTexto()"><span class="text">Limpiar cajas</span></button>
+        <button onclick="limpiarAreaTexto()"><span class="text">Limpiar</span></button>
         
         <br>
         <textarea name=""  id="salidaTexto" cols="37" rows="10" placeholder="Resultado" oninput="limpiarAreaTexto()" readonly></textarea>
