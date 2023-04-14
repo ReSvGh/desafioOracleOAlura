@@ -9,22 +9,26 @@
 </head>
 <body>
     <h1>Encriptador/Desencriptador</h1>
-   <label> 
-        <input type="radio" name="option" value="encryptar" checked> Encriptar
-    </label>
-    <label>
-        <input type="radio" name="option" value="desencriptar"> Desencriptar
-    </label>
-    <br>
-    <textarea name="" id="textoEntrada" cols="30" rows="10" placeholder="Ingrese el texto"></textarea>
-    <br>
-    <button onclick="encriptaDesencriptar()">Realizar Operación</button>
-    <button onclick="limpiarAreaTexto()">Limpiar cajas</button>
-    
-    <br>
-    <textarea name=""  id="salidaTexto" cols="30" rows="10" placeholder="Resultado" oninput="limpiarAreaTexto()" readonly></textarea>
-    <br>
-    <button onclick="copiarAlPortapapel()">Copiar al Portapapel</button>
+    <div class="centrar">
+        <label> 
+            <input type="radio" name="option" value="encryptar" checked> Encriptar
+        </label>
+        <label>
+            <input type="radio" name="option" value="desencriptar"> Desencriptar
+        </label>
+        <br>
+        <textarea name="" id="textoEntrada" cols="37" rows="10" placeholder="Ingrese el texto"></textarea>
+        <br>
+        <button onclick="encriptaDesencriptar()"><span class="text">Realizar operación</span></button>
+        <button onclick="limpiarAreaTexto()"><span class="text">Limpiar cajas</span></button>
+        
+        <br>
+        <textarea name=""  id="salidaTexto" cols="37" rows="10" placeholder="Resultado" oninput="limpiarAreaTexto()" readonly></textarea>
+        <br>
+        <button onclick="copiarAlPortapapel()"><span class="text">Copiar al Portapapel</span></button>
+
+    </div>
+   
 
     <script src="./javas.js"></script>
 </body>
