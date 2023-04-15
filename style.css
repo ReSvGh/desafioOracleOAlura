@@ -1,11 +1,31 @@
 body {
-   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #AA076B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     font-family: Arial, sans-serif;
     text-align: center;
     
 }
 label, input, button {
     margin: 10px;
+    color:#8becfd;
+    -webkit-text-stroke: 0.1px black;
+    text-shadow: -1px -1px 1px #000000;
+    text-shadow: rgb(0, 217, 255) 1px 0 10px;
+    
+}
+.por{
+    color:#8be9fa;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: rgb(0, 217, 255) 1px 0 10px;
+    -webkit-text-stroke: 0.2px black;
+    margin-top: .1px;
+    
+    
 }
 
 
@@ -58,5 +78,23 @@ button {
    button:active {
     transform: scale(0.9);
    }
-
-   
+   .header{
+-webkit-text-stroke: .40px black;
+  font-size: 15px;  
+  background: -webkit-linear-gradient(left top, rgb(225, 0, 255), #8becfd);
+  background: linear-gradient(to bottom right, rgb(225, 0, 255), #8becfd);
+  background-clip: text;  
+  -webkit-text-fill-color: transparent; 
+  text-shadow: #8becfd 1px 0 10px;
+   }
+.textoA{
+    /* background-color: #fff; */
+    border-radius: 5px;
+    box-shadow:0px 5px 20px rgba(0, 0,0,0.30);
+    
+    
+}
+a img{
+    margin:8px;
+    width: 40px;
+}

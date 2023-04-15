@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Encriptador/Desencriptador</h1>
+    <header class="header">
+        <h1>Encriptador/Desencriptador</h1>
+        
+    </header>
+   
     <div>
         <label> 
             <input type="radio" name="option" value="encryptar" checked> Encriptar
@@ -17,17 +21,24 @@
             <input type="radio" name="option" value="desencriptar"> Desencriptar
         </label>
         <br>
-        <textarea name="" id="textoEntrada" cols="37" rows="10" placeholder="Ingrese el texto"></textarea>
+        <textarea class="textoA" name="" id="textoEntrada" cols="37" rows="10" placeholder="Ingrese el texto"></textarea>
         <br>
         <button onclick="encriptaDesencriptar()"><span class="text">Realizar operación</span></button>
         <button onclick="limpiarAreaTexto()"><span class="text">Limpiar</span></button>
         
         <br>
-        <textarea name=""  id="salidaTexto" cols="37" rows="10" placeholder="Resultado" oninput="limpiarAreaTexto()" readonly></textarea>
+        <textarea class="textoA" name=""  id="salidaTexto" cols="37" rows="10" placeholder="Resultado" oninput="limpiarAreaTexto()" readonly></textarea>
         <br>
         <button onclick="copiarAlPortapapel()"><span class="text">Copiar al Portapapel</span></button>
 
     </div>
+    <footer>
+        <a href="https://github.com/ReSvGh"><img src="./icons/github.png" alt=""></a>
+    
+        <a  href="https://twitter.com/_ReSv3"><img src="./icons/twitter.png" alt=""></a>
+        <p class="por">By RenéSVazq.</p>
+       
+    </footer>
    
 
     <script src="./javas.js"></script>
